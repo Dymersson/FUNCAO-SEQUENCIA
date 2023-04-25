@@ -1,0 +1,19 @@
+<DOCTYPE html>
+    <html>
+    <body>
+        <head>
+            <script>
+                 
+                 function somaDigitos(numero) {
+  let soma = 0;
+  while (numero > 0) {
+    soma += numero % 10; // adiciona o último dígito ao somatório
+    numero = Math.floor(numero / 10); // remove o último dígito do número
+  }
+  return soma;
+}
+console.log(somaDigitos(123456));
+
+            </script>
+        </head>
+    </body>
